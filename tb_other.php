@@ -20,7 +20,7 @@ else echo ("BG TB 2 created error <hr>");
 
 $query_regDrug="CREATE TABLE IF NOT EXISTS rDrug_Dealer(
     brandName varchar(30),
-    dealerId varchar(20),
+    dealerId integer(20),
     PRIMARY KEY(brandName,dealerId),
     FOREIGN KEY(brandName) REFERENCES regDrug(brandName) ,
     FOREIGN KEY(dealerId) REFERENCES dealer(dealerId)
@@ -30,8 +30,8 @@ if($connect->query($query_regDrug)) echo ("BG TB 3 created <hr>");
 else echo ("BG TB 3 created error <hr>");
 
 $query_regDrug="CREATE TABLE IF NOT EXISTS pharmacy_dealer(
-    pharmacyId varchar(20),
-    dealerId varchar(20),
+    pharmacyId integer(20),
+    dealerId integer(20),
     PRIMARY KEY(pharmacyId,dealerId),
     FOREIGN KEY (pharmacyId) REFERENCES pharmacy(pharmacyId),
     FOREIGN KEY (dealerId) REFERENCES dealer(dealerId)
