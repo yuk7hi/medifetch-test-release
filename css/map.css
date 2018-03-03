@@ -1,5 +1,6 @@
 div.container {
     width: 100%;
+    float: left;
     
 }
 
@@ -12,12 +13,13 @@ header, footer {
 }
 
 nav.details {
+    border: 1px solid gray;
     overflow: scroll;
     float: left;
     max-width: 360px;
     margin: 0;
     padding: 1em;
-    height: 500px;
+    height:700px;
 }
 
 nav ul {
@@ -30,12 +32,12 @@ nav ul a {
 }
 
 article {
-    margin-left: 170px;
+    
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
 }
 #map {
-    height: 500px;
+    height:700px;
     width: 100%;
 }

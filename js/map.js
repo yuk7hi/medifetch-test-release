@@ -12,7 +12,7 @@ function initMap2(lati,langi) {
     var marker = new google.maps.Marker({
         position: harcourts,
         map: map,
-        icon: 'icons/pharmacy.png'
+        icon: 'pharmacy.png'
     });
 }
 
