@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,11 +54,22 @@ function getData($dname){
         echo "<br/><hr/><br/>";
     }   // print data from DB
 }
+
 getData($dname);
+
+$_SESSION['medicine']=$dname;
+
+
 ?> 
    </nav>
 </div>
 <article>
+<div class="subscribe_container">
+    <form action="user_subscribe.php" method="post">
+    <input type="number" name='telno'>
+    <button type="submit">Subscribe</button>
+    </form>
+</div>
 <div id="map"></div>
 
 <script src="js/map.js"></script>
