@@ -1,0 +1,41 @@
+div.container {
+    width: 100%;
+    
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #C0C0C0;
+    clear: left;
+    text-align: center;
+}
+
+nav.details {
+    overflow: scroll;
+    float: left;
+    max-width: 360px;
+    margin: 0;
+    padding: 1em;
+    height: 500px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+#map {
+    height: 500px;
+    width: 100%;
+}
