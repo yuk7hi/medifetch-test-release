@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Google Map using MySQL and PHP</title>
+    <link rel="stylesheet" href="css/style-map.css">
+</head>
+<body>
+
+    <!-- define area for displaying the map window -->
+    <div id="map"></div>
+
+    <!-- js scripts for map functions -->
+    <script src="js/map.js"></script>
+
+    <!-- loading the API key for the map, and calling back on the map initialization function -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpPgNC2KPMLWt0S2efRYRyyilrHyu6aSo&callback=initMap">
+    </script>
+</body>
+</html>
